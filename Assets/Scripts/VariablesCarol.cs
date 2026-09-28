@@ -20,15 +20,14 @@ public class VariablesCarol : MonoBehaviour
         CharacterAlive = false;
 
 
-        // int temp = CharacterStrength - CharacterLife;
+        int temp = CharacterStrength - CharacterLife;
 
-        //Debug.Log(temp.ToString());
+        Debug.Log(temp.ToString());
+
         Debug.Log("Valor sem operador: " + CharacterLife);
         Debug.Log("Valor com operador antes: " + ++CharacterLife);
         Debug.Log("Valor com operador depois: " + CharacterLife++);
-        string[] InventorySlot string[10];
-        InventorySlot[1] = "Pombo";
-        InventorySlot[2] = "Cartola";
+   
 
 
     }
