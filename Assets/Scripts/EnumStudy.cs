@@ -28,8 +28,13 @@ public class EnumStudy : MonoBehaviour
     void Start()
     {
         Planetas CurrentPlaneta = Planetas.Venus;
+
+        Random random = new Random();
+
         int index = (int)CurrentPlaneta;
-        /*
+        string PlanetaName = Planetas.Venus.ToString();
+        int PlanetaRaio = (int)RaioPlanetas.Venus;
+      
         Debug.Log("Planeta: " + PlanetaName);
         Debug.Log(" O raio de " + PlanetaName + " é : " + PlanetaRaio + "km");
         
@@ -41,7 +46,7 @@ public class EnumStudy : MonoBehaviour
         Debug.Log(Planetas.Saturno + " é o planeta numero " + (int)Planetas.Saturno);
         Debug.Log(Planetas.Urano + " é o planeta numero " + (int)Planetas.Urano);
         Debug.Log(Planetas.Netuno + " é o planeta numero " + (int)Planetas.Netuno);
-        */
+        
         for(int i = 1; i <= 8; i++)
         {
             Debug.Log("Planeta: " + (Planetas)i);

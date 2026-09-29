@@ -37,7 +37,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
         }
 
         // atividade de enum
-        dificuldade DificuldadeAtual = dificuldade.normal;
+        dificuldade DificuldadeAtual = dificuldade.Insano;
 
         switch (DificuldadeAtual) 
         {
@@ -60,5 +60,27 @@ public class NewMonoBehaviourScript : MonoBehaviour
         {
             Debug.Log((Planetas)i + " é o planeta número " + (int)(Planetas)i);
         }
+
+        // estudo de if/else
+        
+        int[] numeros = { 10, 25, 30, 47, 50, 63 };
+        
+        for (int i = 0; i < numeros.Length; i++)
+        {
+          bool parouimpar = numeros[i] % 2 == 0;
+           if (parouimpar == true)
+            {
+                Debug.Log(numeros[i] + " é um numero par");
+            }
+           if (parouimpar == false)
+            {
+                Debug.Log(numeros[i] + " é um numero impar");
+            }
+        }
+
+        
+
+
+        
     }
 }
