@@ -11,19 +11,15 @@ public class Trap : MonoBehaviour
                                                                                 "Cajado de Fogo" };
         int RandomSlot = UnityEngine.Random.Range(0, inventory.Length);
 
+        string SlotAntigo = inventory[RandomSlot];
+
         string[] Trap = { "Espada Quebrada", "Escudo Quebrado" };
 
-        inventory[RandomSlot] =Trap[UnityEngine.Random.Range(0, Trap.Length)];
+        int RandomTrap = UnityEngine.Random.Range(0, Trap.Length);
 
-        for (int i = 0; i < inventory.Length; i++)
-        {
-            for(int t = 0; t < Trap.Length; t++)
-            {
-                if (inventory[i] == Trap[t])
-                {
-                    Debug.Log("O item " + inventory[i] + " foi substituido por " + Trap[t]);
-                }
-            }
-        }
+  
+       inventory[RandomSlot] = Trap[RandomTrap];
+       Debug.Log("O item " + SlotAntigo + " foi substituido por " + inventory[RandomSlot]);
+
     }
 }

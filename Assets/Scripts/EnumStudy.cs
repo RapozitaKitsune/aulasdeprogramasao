@@ -29,8 +29,6 @@ public class EnumStudy : MonoBehaviour
     {
         Planetas CurrentPlaneta = Planetas.Venus;
 
-        Random random = new Random();
-
         int index = (int)CurrentPlaneta;
         string PlanetaName = Planetas.Venus.ToString();
         int PlanetaRaio = (int)RaioPlanetas.Venus;
