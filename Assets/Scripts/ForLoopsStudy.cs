@@ -24,8 +24,7 @@ public class ForLoopsStudy : MonoBehaviour
         string[] Inventario = { "Espada", "Escudo", "Pocao de Cura", "Mapa do Reino", "Rações de Viagem", "Pergaminho", "Botas", "Maçã Dourada", "Picareta", "Machado", "Corda(10m)", "Olho do Enderman" };
         for (int i = 0; i < Inventario.Length; i++)
         {
-            int Aleatorio = Random.Range(0, Inventario.Length);
-            Debug.Log(Inventario[Aleatorio]);
+            Debug.Log(Inventario);
 
         }
   
