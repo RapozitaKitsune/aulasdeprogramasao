@@ -127,14 +127,14 @@ public class Variables : MonoBehaviour
         gfdgdfgdfgd
          */
 
-        int aleatorio = Random.Range(0, 15);
-        float aleatorio2 = Random.Range(0.0f, 15.0f);
+        int aleatorio = UnityEngine.Random.Range(0, 15);
+        float aleatorio2 = UnityEngine.Random.Range(0.0f, 15.0f);
         
 
         string[] inventario = { "Espada", "Escudo", "Armadura", "Luva", "Bota", 
                                "Elmo", "Pocao", "Adaga", "Kit Medico", "Livro" };
 
-        Random.Range(0, inventario.Length);
+        UnityEngine.Random.Range(0, inventario.Length);
 
 
         for (int i = 0; i < inventario.Length; i++)

@@ -11,12 +11,12 @@ public class Atividade : MonoBehaviour
             "Saco de Moedas de Ouro", "Adaga Envenenada", "Amuleto de Proteção", "Pena de Fênix", 
                                                                                 "Cajado de Fogo" };
 
-        int randomIndex = Random.Range(0, inventory.Length);
-        inventory[randomIndex] = (Random.Range(0,2) % 2) == 0 ? "Espada Quebrada" : "Escudo Quebrado";
+        int randomIndex = UnityEngine.Random.Range(0, inventory.Length);
+        inventory[randomIndex] = (UnityEngine.Random.Range(0,2) % 2) == 0 ? "Espada Quebrada" : "Escudo Quebrado";
 
         string oldName;
 
-        int percent = Random.Range(0, 100);
+        int percent = UnityEngine.Random.Range(0, 100);
         if(percent < 50)
         {
             oldName = inventory[randomIndex];
