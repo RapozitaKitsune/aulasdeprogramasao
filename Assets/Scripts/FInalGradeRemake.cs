@@ -15,5 +15,9 @@ public class FInalGradeRemake : MonoBehaviour
         bool PassouDeAno = PresensaAluno >= PresensaNecessaria && MediaAtividades >= MediaNecessaria;
 
         Debug.Log("A aluna " + AlunoName + " foi aprovada? " + PassouDeAno);
+        {
+            // o que fica dentro de chaves é um escopo
+        }
     }
 }
+    
