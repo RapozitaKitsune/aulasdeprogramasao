@@ -126,6 +126,48 @@ public class StructKKK : MonoBehaviour
         Staff.amount = 1;
         Debug.Log("Item: " + Staff.name + " preço: " + Staff.price + " Quantidade no inventário: " + Staff.amount);
 
+        // Espada Quebrada
+        InventoryItem EspadaQ = new InventoryItem();
+        EspadaQ.name = "Espada Quebrada";
+        EspadaQ.price = 1f;
+        EspadaQ.amount = 1;
+        Debug.Log("Item: " + EspadaQ.name + " preço: " + EspadaQ.price + " Quantidade no inventário: " + EspadaQ.amount);
+
+        //Escudo Quebrado
+        InventoryItem EscudoQ = new InventoryItem();
+        EscudoQ.name = "Escudo Quebrado";
+        EscudoQ.price = 1f;
+        EscudoQ.amount = 1;
+        Debug.Log("Item: " + EscudoQ.name + " preço: " + EscudoQ.price + " Quantidade no inventário: " + EscudoQ.amount);
+
+        InventoryItem[] Inventario = new InventoryItem[16];
+        Inventario[0] = Sword;
+        Inventario[1] = Shield;
+        Inventario[2] = Potion;
+        Inventario[3] = Mana;
+        Inventario[4] = Fireball;
+        Inventario[5] = Torch;
+        Inventario[6] = Rope;
+        Inventario[7] = Ring;
+        Inventario[8] = Map;
+        Inventario[9] = Gold;
+        Inventario[10] = Dagger;
+        Inventario[11] = Amulet;
+        Inventario[12] = Phoenix;
+        Inventario[13] = Food;
+        Inventario[14] = Staff;
+        Inventario[15] = Lockpick;
+
+        InventoryItem[] InventarioBroken = new InventoryItem[2];
+        InventarioBroken[0] = EspadaQ;
+        InventarioBroken[1] = EscudoQ;
+
+      int RandoItem = UnityEngine.Random.Range(0, Inventario.Length);
+      int RandoQUebra = UnityEngine.Random.Range(0,2);
+
+        Inventario[RandoItem] = InventarioBroken[RandoQUebra];
+
+     //porra de buceta do caralho merda fudida
     }
 
     // Update is called once per frame
