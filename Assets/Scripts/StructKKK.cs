@@ -165,10 +165,25 @@ public class StructKKK : MonoBehaviour
       int RandoItem = UnityEngine.Random.Range(0, Inventario.Length);
       int RandoQUebra = UnityEngine.Random.Range(0,2);
 
+        string ItemAntigo = Inventario[RandoItem].name;
+
         Inventario[RandoItem] = InventarioBroken[RandoQUebra];
 
-     //porra de buceta do caralho merda fudida
+     //basicamente. Depois de passar 10h escrevendo essa caralhada de item e atribuindo valores definidos no struct, eu enfiei tudo em 2 arrays
+
+      for(int i = 0; i < Inventario.Length; i++)
+        {
+            if (Inventario[i].name == EspadaQ.name)
+            {
+                Debug.Log("O item " + ItemAntigo + " foi trocado por " + EspadaQ.name);
+            }
+            else
+            {
+                Debug.Log("O item " + ItemAntigo + " foi trocado por " + EscudoQ.name);
+            }
+        }
     }
+
 
     // Update is called once per frame
     void Update()
